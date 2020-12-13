@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiFit-Survey</title>
+    <link ref="stylesheet" href="sytle.css">
+</head>
+<body>
+<h1 id="titel">LiFit Survey Form</h1>
+<p id="description">Thank you for taking time to help us improve our app</p>
+<form id="survey-form">
+    <label for="name" id="name-label">Name
+        <input id="name" type="text" placeholder="Enter your Name" required>
+    </label>
+    <label for="email" id="email-label">E-Mail
+        <input id="email" type="email" placeholder="Enter your Email" required>
+    </label>
+    <label for="number" id="number-label">Age (optional)
+        <input id="number" type="number" max="150" min="10" placeholder="Enter your Age">
+    </label>
+    <label for="dropdown" id="dropdown-label">What is your art of Training
+        <select id="dropdown">
+            <option disabled value>Selcet your art of training:</option>
+            <option value="alown">I do sports alown</option>
+            <option value="friends">I do sports with friends</option>
+            <option value="team">I do sports in team</option>
+        </select>
+    </label>
+    <fieldset>
+        <legend>How do you want to do sports:</legend>
+        <label for="alown">
+            <input type="radio" name="alown" id="s-alown">
+            I want to do sports alown
+        </label>
+        <label for="team">
+            <input type="radio" name="team" id="s-team">
+            I want to do sports alown
+        </label>
+        <label for="friends">
+            <input type="radio" name="friend" id="s-friend">
+            I want to do sports with friends
+        </label>
+    </fieldset>
+    <label for="dropdown" id="dropdown-label">What are your experience in sports
+        <select id="dropdown">
+            <option disabled value>Sport Level:</option>
+            <option value="beginner">Beginner</option>
+            <option value="advanced">Advanced</option>
+            <option value="pro">Pro</option>
+            <option value="expert">Expert</option>
+        </select>
+        <fieldset>
+            <legend>How often do you do sports:</legend>
+            <label for="month">
+                <input type="radio" name="month" id="month">
+                1-2 per month
+            </label>
+            <label for="week">
+                <input type="radio" name="week" id="week">
+                1-2 per week
+            </label>
+            <label for="week2">
+                <input type="radio" name="week2" id="week2">
+                3-4 per week
+            </label>
+        </label>
+        </fieldset>
+    <label for="comment">Any comments or suggestions?
+        <textarea name="comments" id="comments" placeholder="Enter your comment here... "></textarea>
+    </label>
+    <button type="submit" id="submit">Submit</button>
+    </form>    
+</body>
+</html>
