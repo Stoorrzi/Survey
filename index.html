@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiFit-Survey</title>
-    <link ref="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1 id="titel">LiFit Survey Form</h1>
@@ -16,12 +16,12 @@
     <label for="email" id="email-label">E-Mail
         <input id="email" type="email" placeholder="Enter your Email" required>
     </label>
-    <label for="number" id="number-label">Age (optional)
+    <label for="number" id="number-label">Age <span class="clue">(optional)</span>
         <input id="number" type="number" max="150" min="10" placeholder="Enter your Age">
     </label>
     <label for="dropdown" id="dropdown-label">What is your art of Training
         <select id="dropdown">
-            <option disabled value>Selcet your art of training:</option>
+            <option disabled selected value>Selcet your art of training:</option>
             <option value="alown">I do sports alown</option>
             <option value="friends">I do sports with friends</option>
             <option value="team">I do sports in team</option>
@@ -44,7 +44,7 @@
     </fieldset>
     <label for="dropdown" id="dropdown-label">What are your experience in sports
         <select id="dropdown">
-            <option disabled value>Sport Level:</option>
+            <option disabled selected value>Sport Level:</option>
             <option value="beginner">Beginner</option>
             <option value="advanced">Advanced</option>
             <option value="pro">Pro</option>
